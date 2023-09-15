@@ -5,14 +5,14 @@ m = 3, n = 2->A(m, n) = 29
 */
 
 //step1
-int InputNumbers(string text)
+uint InputNumbers(string text)
 {
   Console.Write(text);
-  return int.Parse(Console.ReadLine()!);
+  return uint.Parse(Console.ReadLine()!);
 }
 
 //step2
-int searchResult(int m, int n)
+uint searchResult(uint m, uint n)
 {
   if (m == 0)
   {
@@ -26,7 +26,7 @@ int searchResult(int m, int n)
 }
 
 //step3
-int valueM = InputNumbers("Введите значение M: ");
-int valueN = InputNumbers("Введите значение N: ");
-int resultFuncAkkerman = searchResult(valueM, valueN);
+uint valueM = InputNumbers("Введите значение M: ");
+uint valueN = InputNumbers("Введите значение N: ");
+uint resultFuncAkkerman = searchResult(valueM, valueN);
 Console.Write($"m = {valueM}, n = {valueN} -> A({valueM}, {valueN}) = {resultFuncAkkerman}");
